@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portfolio</title>
+</head>
+<body>
+   
+    <!-- SECCION PROYECTO -->
+    <section id="proyecto" class="proyecto">
+        <div class="contenido-seccion">
+            <h2>DevOps CI/CD with Node.js, Docker, and CircleCI</h2>
+            <h3>Steps</h3>
+            <ul>
+                <li>Node.js</li>
+                <li>Docker</li>
+                <li>CircleCI</li>
+            </ul>
+            <img src="img/job.png">
+            <h3>Project Steps</h3>
+            <ol>
+                <ol>
+                    <li>Clone Repository:
+                        <ul>
+                            <li>Cloned the repository from <a href="https://github.com/Silverhand16/CI_CD_nodejs.git">https://github.com/Silverhand16/CI_CD_nodejs.git</a> to work with the Node.js application and set up the CI/CD pipeline.</li>
+                        </ul>
+                    </li>
+                    <li>CircleCI Pipeline Configuration:
+                        <ul>
+                            <li>Created a new branch for developing the CI/CD pipeline.</li>
+                            <li>Defined the pipeline in a `.circleci/config.yml` file, specifying the version, jobs, and sequences required for the CI/CD process.</li>
+                            <li>Configured jobs to build Docker images, run tests, and deploy the application in both test and production environments.</li>
+                        </ul>
+                    </li>
+                    <li>Building the Docker Image:
+                        <ul>
+                            <li>Installed dependencies using npm and configured the Dockerfile to build the Docker image of the Node.js application.</li>
+                            <li>Optimized the build process using Docker layer caching to save time and resources.</li>
+                            <li>Logged in to Docker Hub and configured environment variables for image deployment.</li>
+                        </ul>
+                    </li>
+                    <li>CircleCI Configuration and Activation:
+                        <ul>
+                            <li>Used Git commands to add and commit configuration files to ensure CircleCI detects and executes the configurations.</li>
+                            <li>Automated builds and deployments with CircleCI to streamline the integration and deployment processes.</li>
+                        </ul>
+                    </li>
+                    <li>Automated Deployment:
+                        <ul>
+                            <li>Deployed the application in a Docker container to ensure consistency across different environments.</li>
+                            <li>Configured CircleCI to automatically trigger deployments and publish Docker images to Docker Hub upon successful builds.</li>
+                            <li>Downloaded the Docker image to a virtual machine for final execution and testing.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>CI/CD Workflow</h3>
+            <ol>
+                <li>Continuous Integration (CI):
+                    <ul>
+                        <li>Combine code into the master branch to centralize integration.</li>
+                        <li>Perform code reviews to ensure quality and consistency.</li>
+                        <li>Run builds and unit/integration tests to verify code functionality and correctness.</li>
+                    </ul>
+                </li>
+                <li>Continuous Delivery (CD):
+                    <ul>
+                        <li>Deploy the application to a test server (e.g., VirtualBox VM) for validation.</li>
+                        <li>Conduct User Acceptance Testing (UAT) and quality control.</li>
+                        <li>Deliver builds throughout the development cycle for ongoing evaluation and feedback.</li>
+                    </ul>
+                </li>
+                <li>Continuous Deployment (CD):
+                    <ul>
+                        <li>Deploy the Docker image to a production server or release environment.</li>
+                        <li>If successful, publish the image on Docker Hub and then deploy it to the virtual machine.</li>
+                        <li>Also plan for deployment to cloud servers, replicating the workflow in cloud production environments.</li>
+                    </ul>
+                </li>
+            </ol>
+                
+            <h2>Project Advancements</h2>
+            <h3>Circleci</h3>
+            <img src="img/cap1.png">
+            <h3>Dockerhub</h3>
+            <img src="img/cap2.png">
+            <h3>Docker ps</h3>
+            <img src="img/cap3.png">
+            <h3>App running</h3>
+            <img src="img/cap4.png">
+            <h2>project based on</h2>
+            <h2>https://www.youtube.com/watch?v=9U55bShQIgQ</h2>
+            <!-- Back to Top Button -->
+            <a href="index.html" class="button-home">Back to Top <i class="fa fa-home"></i></a>
+        </div>
+    </section>
+</body>
+</html>
